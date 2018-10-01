@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main(){
+  double weight, radius, buoyancy, volume, fluidweight;
+   
+  cout.setf(ios::fixed);
+  cout.setf(ios::showpoint);
+  cout.precision(2);
+  
+  cout << "Input weight of sphere in pounds.\n";
+  cin >> weight;
+  cout << "Input radius of sphere in feet.\n";
+  cin >> radius;
+  
+  volume = (4.0/3)*(3.14)*(radius*radius*radius);
+  fluidweight = 62.4;
+  buoyancy = volume * fluidweight;
+  
+  if(buoyancy >= weight){
+    cout << "The sphere will float in water.\n";
+   }
+  else if(buoyancy < weight){
+    cout << "The sphere will sink in water.\n";
+   }
+   return 0;
+  }
