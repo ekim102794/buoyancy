@@ -18,9 +18,9 @@ int main(){
   
   if(buoyancy >= weight){
     cout << "The sphere will float in water.\n";
-   }
+  }
   else if(buoyancy < weight){
     cout << "The sphere will sink in water.\n";
-   }
-   return 0;
   }
+  return 0;
+}
